@@ -1,34 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcarassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/18 11:10:35 by dcarassi          #+#    #+#             */
-/*   Updated: 2022/10/18 11:37:38 by dcarassi         ###   ########.fr       */
+/*   Created: 2022/10/18 11:46:39 by dcarassi          #+#    #+#             */
+/*   Updated: 2022/10/18 11:59:07 by dcarassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_alphabet(void)
+void	ft_print_numbers(void)
 {
-	char	alphabet;
-	int		i;
+	int	i;
+	int numbers = '0';
 
-	alphabet = 'a';
 	i = 0;
-	while (i < 26)
+	while (i < 10)
 	{
-		write(1, &alphabet, 1);
+		write(1, &numbers, 1);
 		i++;
-		alphabet++;
+		numbers++;
 	}
 }
 
 int	main(void)
 {
-	ft_print_alphabet();
+	ft_print_numbers();
 	return (0);
 }
