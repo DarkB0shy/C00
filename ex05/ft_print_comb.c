@@ -6,20 +6,19 @@
 /*   By: dcarassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 19:05:42 by dcarassi          #+#    #+#             */
-/*   Updated: 2022/10/18 19:28:56 by dcarassi         ###   ########.fr       */
+/*   Updated: 2022/10/19 09:29:35 by dcarassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_print_comb(void)
+void	ft_print_comb(void)
 {
-	char a;
-	char b;
-	char c;
+	char	a;
+	char	b;
+	char	c;
 
 	a = '0';
-
 	while (a <= '7')
 	{
 		b = a + 1;
@@ -44,5 +43,5 @@ void ft_print_comb(void)
 int	main(void)
 {
 	ft_print_comb();
-	return(0);
+	return (0);
 }
