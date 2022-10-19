@@ -1,47 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb.c                                    :+:      :+:    :+:   */
+/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcarassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/18 19:05:42 by dcarassi          #+#    #+#             */
-/*   Updated: 2022/10/19 09:35:03 by dcarassi         ###   ########.fr       */
+/*   Created: 2022/10/19 16:55:11 by dcarassi          #+#    #+#             */
+/*   Updated: 2022/10/19 17:09:53 by dcarassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_comb(void)
+void	ft_print_comb2(void)
 {
-	char	a;
-	char	b;
-	char	c;
+	int	x;
+	int	y;
+	int	lx;
+	int	rx;
+	int	ly;
+	int	ry;
 
-	a = '0';
-	while (a <= '7')
+	x = 0;
+	while (x <= 98)
 	{
-		b = a + 1;
-		while (b <= '8')
+		y = x + 1;
+		while (y <= 99)
 		{
-			c = b + 1;
-			while (c <= '9')
-			{
-				write(1, &a, 1);
-				write(1, &b, 1);
-				write(1, &c, 1);
-				if (a < '7')
-					write(1, ", ", 2);
-				c++;
-			}
-			b++;
+			lx = x / 10 + '0';
+			rx = x % 10 + '0';
+			ly = y / 10 + '0';
+			ry = y % 10 + '0';
+			write(1, &lx, 1);
+			write(1, &rx, 1);
+			write(1, " ", 1);
+			write(1, &ly, 1);
+			write(1, &ry, 1);
+			if (x <= 98)
+				write(1, ", ", 2);
+			y++;
 		}
-		a++;
+		x++;
 	}
 }
 
 int	main(void)
 {
-	ft_print_comb();
+	ft_print_comb2 ();
 	return (0);
 }
