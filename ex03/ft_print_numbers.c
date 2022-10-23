@@ -6,7 +6,7 @@
 /*   By: dcarassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 11:46:39 by dcarassi          #+#    #+#             */
-/*   Updated: 2022/10/18 11:59:07 by dcarassi         ###   ########.fr       */
+/*   Updated: 2022/10/23 11:42:12 by dcarassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,9 @@
 void	ft_print_numbers(void)
 {
 	int	i;
-	int numbers = '0';
+	int	numbers;
 
+	numbers = '0';
 	i = 0;
 	while (i < 10)
 	{
@@ -24,10 +25,4 @@ void	ft_print_numbers(void)
 		i++;
 		numbers++;
 	}
-}
-
-int	main(void)
-{
-	ft_print_numbers();
-	return (0);
 }

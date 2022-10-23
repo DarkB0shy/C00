@@ -6,7 +6,7 @@
 /*   By: dcarassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 16:01:09 by dcarassi          #+#    #+#             */
-/*   Updated: 2022/10/18 16:16:40 by dcarassi         ###   ########.fr       */
+/*   Updated: 2022/10/23 11:44:18 by dcarassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,4 @@ void	ft_is_negative(int n)
 		pos_neg = 'N';
 		write(1, &pos_neg, 1);
 	}
-}
-
-int	main(void)
-{
-	ft_is_negative(-2);
-	return (0);
 }

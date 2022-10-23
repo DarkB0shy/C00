@@ -6,7 +6,7 @@
 /*   By: dcarassi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 11:16:49 by dcarassi          #+#    #+#             */
-/*   Updated: 2022/10/18 11:45:00 by dcarassi         ###   ########.fr       */
+/*   Updated: 2022/10/23 11:43:08 by dcarassi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,4 @@ void	ft_print_reverse_alphabet(void)
 		i++;
 		reverse_alphabet--;
 	}
-}
-
-int	main(void)
-{
-	ft_print_reverse_alphabet();
-	return (0);
 }
